@@ -24,7 +24,6 @@ void draw() {// her skal alt vores pseudokode ligge i, her kalder vi på alle fu
   
   
   drawMainDrawingBoard();//kalder på min drawMainDrawingBoard funktion
-  drawSavingButton(); // kalder på min drawSavingButton funktion
   //drawHelpingBox(); // min boks til at hjælpe med at lokalisere min ledning, virkede meget godt, men skal ikke med i det rigtige program
   
   drawWireSize(); 
@@ -34,15 +33,9 @@ void draw() {// her skal alt vores pseudokode ligge i, her kalder vi på alle fu
 
 
 void drawMainDrawingBoard() {// tegner den inderste firkant, hvor vores kabler, loads osv er i
-  rect(80, 70, 850, 580 ); // fortæller den at det skal være en firkant
+  rect(80, 70, 850, 580, 10); // fortæller den at det skal være en firkant
 }
-void drawSavingButton () {
-  rect(1100, 610, 120, 40);// tegner firkant
-  textSize(22);// bestemmer tekst størrelsen
-  fill(0);// bestemmer farven på teksten
-  text("Save", 1135, 640);// tegner en tekst i kassen
-  noFill();// sørger for den ikke boller andre dele af programmets farver
-}
+
 
 
 
