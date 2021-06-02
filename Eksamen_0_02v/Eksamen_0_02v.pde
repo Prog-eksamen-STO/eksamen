@@ -106,8 +106,6 @@ void doCalc(){
   gui.varSZ.setText(str(2200/((V/A)/0.0155)));
   
   // do some math
-  
-
-  gui.varA.setText(str(V));
+ 
 
 }
