@@ -56,11 +56,6 @@ varV = cp5.addTextfield("varV");
       .setAutoClear(false)
       .setLabel("Wire Size");
       
-
-    doCalc = cp5.addButton("doCalc");
-    doCalc.setPosition(1100, 80)
-      .setSize(100, 50)
-      .setLabel("Enter A");
       
     doCalc = cp5.addButton("doCalc");
     doCalc.setPosition(1100, 100)
