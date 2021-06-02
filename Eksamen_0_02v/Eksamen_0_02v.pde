@@ -26,7 +26,7 @@ void draw() {// her skal alt vores pseudokode ligge i, her kalder vi på alle fu
   drawMainDrawingBoard();//kalder på min drawMainDrawingBoard funktion
   //drawHelpingBox(); // min boks til at hjælpe med at lokalisere min ledning, virkede meget godt, men skal ikke med i det rigtige program
   
-  drawWireSize(); 
+  drawWireSize(); // tegner selve wirerens størrelse, efter at den er blevet beregnet
   
 }
 
@@ -51,9 +51,9 @@ void mouseClicked() {// funktionen der ændre på min x og y variabler så snart
 }
 void drawWireSize() {// funktion der skal tegne wireren når man 
   
-  fill(184, 115, 51);
-  circle(width/2,height/2,V);
-  noFill();
+  fill(184, 115, 51);// kobber farven
+  circle(width/2,height/2,WS);// placerer cirklen midt i vores baggrund
+  noFill();// fucker ikke resten op
   
   
   /*if ((x > 200) && (x < 750) && (y > 150) && (y < 230)) {//længere if statement, der fortæller at hvis mussen er inde for kassen, så skal den gøre den næste linje kode
