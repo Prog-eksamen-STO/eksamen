@@ -51,8 +51,9 @@ void mouseClicked() {// funktionen der ændre på min x og y variabler så snart
 }
 void drawWireSize() {// funktion der skal tegne wireren når man 
   
-  fill(100);
+  fill(184, 115, 51);
   circle(width/2,height/2,V);
+  noFill();
   
   
   /*if ((x > 200) && (x < 750) && (y > 150) && (y < 230)) {//længere if statement, der fortæller at hvis mussen er inde for kassen, så skal den gøre den næste linje kode
