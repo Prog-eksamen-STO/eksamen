@@ -1,4 +1,4 @@
-//   hjælpe bibliotek til GUI
+// hjælpe bibliotek til GUI
 import controlP5.*;
 ControlP5 cp5;
 PFont font; // font til Control P5
