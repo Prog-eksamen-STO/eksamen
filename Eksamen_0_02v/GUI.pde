@@ -13,12 +13,12 @@ GUI(){
 void draw(){
   
 varV = cp5.addTextfield("varV");
-    varV.setPosition(1100, 150)
-      .setSize(100, 40)
-      .setFont(font)
-      .setColor(color(255))
-      .setAutoClear(false)
-      .setLabel("Enter Voltage");
+    varV.setPosition(1100, 150)// Vælger positionen af boksen
+      .setSize(100, 40)// Størrelsen på boksen
+      .setFont(font)//
+      .setColor(color(255))// Vælger farven på skriften
+      .setAutoClear(false)//
+      .setLabel("Enter Voltage");//Det gør at der kommer et tekstfelt under den boks man har lavet
 
   
   varA= cp5.addTextfield("varA");
