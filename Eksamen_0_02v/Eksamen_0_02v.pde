@@ -4,7 +4,7 @@ ControlP5 cp5;
 PFont font; // font til Control P5
 GUI gui;
 
-
+float V;
 
 int y = 0 ; // globale variabler, skal bruges til musse funktionen
 int x = 0; // samme her
@@ -13,22 +13,22 @@ int WS = 0;
 
 void setup() {
   size(1280, 720);// vores startside størrelse, 720 x 1280p, burde være fint til at tegne og have tekst bokse i 
-  noLoop(); // sørge for ingen loops i denne side, da dette kun skal tegnes 1 gang
-  //frameRate(2);
-
+  
    // initiering af CP5 og GUI klasserne
    cp5 = new ControlP5(this);
    gui = new GUI();
+   
 }
 void draw() {// her skal alt vores pseudokode ligge i, her kalder vi på alle funktioner
-
+  
+  
   drawMainDrawingBoard();//kalder på min drawMainDrawingBoard funktion
   drawSavingButton(); // kalder på min drawSavingButton funktion
   drawCalculationButtons();
-  drawHelpingBox(); // min boks til at hjælpe med at lokalisere min ledning, virkede meget godt, men skal ikke med i det rigtige program
-  loop(); // skal loope den næste linje
+  //drawHelpingBox(); // min boks til at hjælpe med at lokalisere min ledning, virkede meget godt, men skal ikke med i det rigtige program
+  
   drawWireSize(); 
-  gui.draw();
+  
 }
 
 
@@ -86,7 +86,12 @@ void mouseClicked() {// funktionen der ændre på min x og y variabler så snart
   x = mouseX;// deet samme for den her
 }
 void drawWireSize() {// funktion der skal tegne wireren når man 
-  if ((x > 200) && (x < 750) && (y > 150) && (y < 230)) {//længere if statement, der fortæller at hvis mussen er inde for kassen, så skal den gøre den næste linje kode
+  
+  fill(100);
+  circle(width/2,height/2,V);
+  
+  
+  /*if ((x > 200) && (x < 750) && (y > 150) && (y < 230)) {//længere if statement, der fortæller at hvis mussen er inde for kassen, så skal den gøre den næste linje kode
     println("true", x, y);// lidt hjælpe kode til at diagnosere nogle baby fejl
     fill(211, 211, 211);// gør min kasse grå, i stedet for den normale vide farve, så man kan se forskel
     rect(200, 150, 600, 400);// tegner en kasse
@@ -114,11 +119,17 @@ void drawWireSize() {// funktion der skal tegne wireren når man
     println("close true");// diagnoserings kode
     fill(255);//gør den næste kasse hvid 
     rect(80, 70, 850, 580);// tegner over alt der er lavet indtil nu.
-  }
+  } */
 }
 
 
 void doCalc(){
 
-println("pressed");
+ V = float (gui.varV.getText());
+  
+  // do some math
+  
+
+  gui.varA.setText(str(V));
+
 }

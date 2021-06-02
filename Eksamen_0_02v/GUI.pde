@@ -6,7 +6,7 @@ Button doCalc;
 
 GUI(){
     font = createFont("Arial", 14);
-
+    this.draw();
 }
 
 
