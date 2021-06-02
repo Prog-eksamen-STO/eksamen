@@ -2,7 +2,7 @@ class GUI{
 
 Textfield varV,varA,varR,varW,varWS;
 Button doCalc;
-
+Button save;
 
 GUI(){
     font = createFont("Arial", 14);
@@ -62,6 +62,12 @@ varV = cp5.addTextfield("varV");
       .setSize(100, 40)
       .setFont(font)
       .setLabel("Calculate");
+      
+       save = cp5.addButton("save");
+    save.setPosition(1100, 540)
+      .setSize(100, 40)
+      .setFont(font)
+      .setLabel("Save");
       
   }
   

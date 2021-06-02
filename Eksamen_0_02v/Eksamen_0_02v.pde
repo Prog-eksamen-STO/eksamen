@@ -104,3 +104,15 @@ void doCalc(){
  
 
 }
+void save(){
+String Amperages = Float.toString(A);// en måde at gøre det på 
+String Numbers = (gui.varV.getText()) ;// henter den direkte fra vores gui class, i stedet for at bruge de globale variabler, vi skipper simpelthen over noget af den kode vi har lavet tidligerer
+String Watt = (gui.varW.getText());
+String Wiresize = (gui.varWS.getText());
+String[] minliste = {"Voltage: "+Numbers , "Amperage: "+Amperages, "Watts: " +Watt, "Wiresize: "+ Wiresize};// bruger et string array for at samle alle tal og tekst sammen så det kan gemmes
+
+
+saveStrings("Saved Values.txt", minliste);
+  
+  
+}
