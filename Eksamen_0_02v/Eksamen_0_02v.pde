@@ -5,10 +5,7 @@ PFont font; // font til Control P5
 GUI gui;
 
 float V;
-<<<<<<< HEAD
 float A;
-=======
->>>>>>> 12884dd73b6e3a8e13ff756230d702c0b1d94bbb
 
 int y = 0 ; // globale variabler, skal bruges til musse funktionen
 int x = 0; // samme her
@@ -28,10 +25,6 @@ void draw() {// her skal alt vores pseudokode ligge i, her kalder vi på alle fu
   
   drawMainDrawingBoard();//kalder på min drawMainDrawingBoard funktion
   drawSavingButton(); // kalder på min drawSavingButton funktion
-<<<<<<< HEAD
-=======
-  drawCalculationButtons();
->>>>>>> 12884dd73b6e3a8e13ff756230d702c0b1d94bbb
   //drawHelpingBox(); // min boks til at hjælpe med at lokalisere min ledning, virkede meget godt, men skal ikke med i det rigtige program
   
   drawWireSize(); 
@@ -50,42 +43,9 @@ void drawSavingButton () {
   text("Save", 1135, 640);// tegner en tekst i kassen
   noFill();// sørger for den ikke boller andre dele af programmets farver
 }
-<<<<<<< HEAD
 
-=======
-void drawCalculationButtons() {
 
-  fill(255, 255, 255);
-  rect(1100, 500, 120, 40);
-  textSize(30);
-  fill(0); 
-  text("mm2", 1020, 530);
 
-  fill(255, 255, 255);
-  rect(1100, 450, 120, 40);
-  textSize(30);
-  fill(0); 
-  text("W", 1060, 480);
-
-  fill(255, 255, 255);
-  rect(1100, 400, 120, 40);
-  textSize(30);
-  fill(0); 
-  text("R", 1060, 430);
-
-  fill(255, 255, 255);
-  rect(1100, 350, 120, 40);
-  textSize(30);
-  fill(0); 
-  text("A", 1060, 380);
-
-  fill(255, 255, 255);
-  rect(1100, 300, 120, 40);
-  textSize(30);
-  fill(0); 
-  text("V", 1060, 330);
-}
->>>>>>> 12884dd73b6e3a8e13ff756230d702c0b1d94bbb
 void drawHelpingBox() {// hjælpe kasse til at finde ud af hvornår jeg ramte
   fill(255, 255, 255);// gør den hvid 
   rect(200, 150, 600, 80);// tegner firkanten
@@ -137,7 +97,6 @@ void drawWireSize() {// funktion der skal tegne wireren når man
 void doCalc(){
 
  V = float (gui.varV.getText());
-<<<<<<< HEAD
  A = float (gui.varA.getText());
  
   // do some math
@@ -145,12 +104,10 @@ void doCalc(){
   gui.varW.setText(str(V*A));
   gui.varR.setText(str(V/A));
   gui.varSZ.setText(str(2200/((V/A)/0.0155)));
-=======
   
   // do some math
   
 
   gui.varA.setText(str(V));
->>>>>>> 12884dd73b6e3a8e13ff756230d702c0b1d94bbb
 
 }

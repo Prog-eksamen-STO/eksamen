@@ -1,10 +1,6 @@
 class GUI{
 
-<<<<<<< HEAD
 Textfield varV,varA,varR,varW,varSZ;
-=======
-Textfield varV,varA;
->>>>>>> 12884dd73b6e3a8e13ff756230d702c0b1d94bbb
 Button doCalc;
 
 
@@ -22,12 +18,8 @@ varV = cp5.addTextfield("varV");
       .setFont(font)
       .setColor(color(255))
       .setAutoClear(false)
-<<<<<<< HEAD
       .setLabel("Enter Voltage");
-=======
-      .setLabel("Enter V");
->>>>>>> 12884dd73b6e3a8e13ff756230d702c0b1d94bbb
-  
+
   
   varA= cp5.addTextfield("varA");
     varA.setPosition(1100, 220)
@@ -35,7 +27,6 @@ varV = cp5.addTextfield("varV");
       .setFont(font)
       .setColor(color(255))
       .setAutoClear(false)
-<<<<<<< HEAD
       .setLabel("Enter Amp");
       
       
@@ -65,16 +56,15 @@ varV = cp5.addTextfield("varV");
       .setAutoClear(false)
       .setLabel("Wire Size");
       
+
     doCalc = cp5.addButton("doCalc");
     doCalc.setPosition(1100, 80)
       .setSize(100, 50)
-=======
       .setLabel("Enter A");
       
     doCalc = cp5.addButton("doCalc");
     doCalc.setPosition(1100, 100)
       .setSize(100, 40)
->>>>>>> 12884dd73b6e3a8e13ff756230d702c0b1d94bbb
       .setFont(font)
       .setLabel("Calculate");
       
