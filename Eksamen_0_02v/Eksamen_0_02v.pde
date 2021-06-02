@@ -6,10 +6,10 @@ GUI gui;
 
 float V;
 float A;
+float WS;
 
 int y = 0 ; // globale variabler, skal bruges til musse funktionen
 int x = 0; // samme her
-int WS = 0;
 
 
 void setup() {
@@ -91,12 +91,13 @@ void doCalc(){
 
  V = float (gui.varV.getText());
  A = float (gui.varA.getText());
+ WS = float (gui.varWS.getText());
  
   // do some math
   
   gui.varW.setText(str(V*A));
   gui.varR.setText(str(V/A));
-  gui.varSZ.setText(str(2200/((V/A)/0.0155)));
+  gui.varWS.setText(str(2200/((V/A)/0.0155)));
   
   // do some math
  

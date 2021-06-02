@@ -1,6 +1,6 @@
 class GUI{
 
-Textfield varV,varA,varR,varW,varSZ;
+Textfield varV,varA,varR,varW,varWS;
 Button doCalc;
 
 
@@ -48,8 +48,8 @@ varV = cp5.addTextfield("varV");
       .setLabel("Enter Watt");
       
       
-  varSZ= cp5.addTextfield("varSZ");
-    varSZ.setPosition(1100, 450)
+  varWS= cp5.addTextfield("varWS");
+    varWS.setPosition(1100, 450)
       .setSize(100, 50)
       .setFont(font)
       .setColor(color(255))
