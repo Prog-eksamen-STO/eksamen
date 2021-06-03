@@ -1,0 +1,4 @@
+Voltage: 230
+Amperage: 10.0
+Watts: 2300.0
+Wiresize: 1.4826087
