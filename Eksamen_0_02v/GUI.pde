@@ -15,9 +15,9 @@ void draw(){
 varV = cp5.addTextfield("varV");
     varV.setPosition(1100, 150)// Vælger positionen af boksen
       .setSize(100, 40)// Størrelsen på boksen
-      .setFont(font)//
+      .setFont(font)//bruger den universale font som man laver på linje 7-10
       .setColor(color(255))// Vælger farven på skriften
-      .setAutoClear(false)//
+      .setAutoClear(false)//Det gør at den ikke skal slette teksten i tekstboksen men man godt selv kan gøre det. 
       .setLabel("Enter Voltage");//Det gør at der kommer et tekstfelt under den boks man har lavet
 
   
@@ -62,6 +62,7 @@ varV = cp5.addTextfield("varV");
       .setSize(100, 40)
       .setFont(font)
       .setLabel("Calculate");
+      
       
        save = cp5.addButton("save");
     save.setPosition(1100, 540)
