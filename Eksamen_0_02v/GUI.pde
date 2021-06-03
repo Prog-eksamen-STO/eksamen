@@ -12,7 +12,7 @@ GUI(){
 
 void draw(){
   
-varV = cp5.addTextfield("varV");
+varV = cp5.addTextfield("varV");//det gør bare at man ved de næste par linjer høre til det textfelt hvad man laver på linje 3
     varV.setPosition(1100, 150)// Vælger positionen af boksen
       .setSize(100, 40)// Størrelsen på boksen
       .setFont(font)//bruger den universale font som man laver på linje 7-10
