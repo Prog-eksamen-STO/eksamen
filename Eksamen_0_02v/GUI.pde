@@ -58,7 +58,7 @@ varV = cp5.addTextfield("varV");
       
       
     doCalc = cp5.addButton("doCalc");
-    doCalc.setPosition(1100, 100)
+    doCalc.setPosition(1100, 595)
       .setSize(100, 40)
       .setFont(font)
       .setLabel("Calculate");
