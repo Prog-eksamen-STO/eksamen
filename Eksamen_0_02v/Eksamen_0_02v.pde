@@ -52,7 +52,7 @@ void mouseClicked() {// funktionen der ændre på min x og y variabler så snart
 void drawWireSize() {// funktion der skal tegne wireren når man 
   
   fill(184, 115, 51);// kobber farven
-  circle(width/2,height/2,WS);// placerer cirklen midt i vores baggrund
+  circle(width/2,height/2,WS*10);// placerer cirklen midt i vores baggrund
   noFill();// fucker ikke resten op
   
   
